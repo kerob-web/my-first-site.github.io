@@ -1,0 +1,300 @@
+/* ОСНОВА */
+
+@color-1: rgb(51, 59, 80);
+@color-2: rgb(59,15,26);
+@color-1-5: rgba(51, 59, 80, .5);
+@color-2-5: rgba(59,15,26, .5);  
+body {
+	color: black;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+h1 {
+	color: black;
+	font-size: 60px;
+	font-weight: bold;
+	text-shadow: 1px 1px rgba(255,255,255,.3);
+	.first-letter {
+		color: @color-1;
+		}
+	}
+	h2 {
+		text-shadow: 1px 1px rgba(255,255,255,.3);
+		.first-letter-2 {
+			font-weight: bold;
+			color: @color-2;
+		}
+	}
+
+
+body {
+	font-family: 'Exo 2', sans-serif;
+}
+
+/* КНОПКА "НАВЕРХ"" */
+
+.btn-top {
+	bottom: 40px;
+	right: 40px;
+	position: fixed;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+	z-index: 99;
+	background-color: rgba(255,255,255,.5);
+	font-size: 30px;
+	transition: all 0.5s;
+	color: @color-1;
+	display: none;
+	outline: none;
+	&:hover {
+		background-color: @color-2;
+		cursor: pointer;
+		color: white;
+	}
+	&:active {
+		outline: none;
+		border: none;
+	}
+	&:focus {
+		outline: none;
+		border: none;
+	}
+}
+
+/* НАВИГАЦИЯ */
+
+.top {
+	.navbar {
+		background-color: rgba(255,255,255, .2);
+		border-bottom: 2px solid @color-2;
+		a {
+			margin: 0 20px;
+			font-size: 20px;
+		}
+	}
+}
+
+/* TOP */
+
+.top {
+	border-bottom: 2px solid @color-2;
+	min-height: 100vh;
+	text-align: center;
+	text-transform: uppercase;
+	h1 {
+		font-size: 60px;
+		font-weight: bold;
+		margin-top: 30vh;
+		text-shadow: 1px 1px rgba(255,255,255,.3);
+		.first-letter {
+			color: @color-1;
+		}
+	}
+	h2 {
+		text-shadow: 1px 1px rgba(255,255,255,.3);
+		.first-letter-2 {
+		color: @color-2;
+		}
+	}
+}
+ /* SERVICES */
+.omg {
+
+	min-height: 400px;
+    background: transparent;
+
+}
+
+
+
+.services {
+
+	min-height: 100vh;
+	
+	min-height: 100vh;
+	.services-h {
+		justify-content: center;
+		min-height: 30vh;
+		h1 {
+			border-bottom: 3px solid @color-2;
+			.first-letter {
+				color: @color-2;
+			}
+		}
+	}
+	.services-box {
+		min-height: 70vh;
+		.card-2 {
+			background: url(..//img/box-2.jpg) center;
+			background-size: cover;
+		}
+		.card-1 {
+			background: url(..//img/box-1.jpg) center;
+			background-size: cover;
+		}
+		.card:hover {
+			box-shadow: 0 0 10px @color-2;
+		}
+		.card-body {
+			min-height: 300px;
+			i {
+				color: @color-2;
+				text-shadow: 0 0 5px #fff;
+			}
+			p {
+				font-size: 18px;
+			}
+			h5 {
+				margin-top: 15px;
+				font-size: 30px;
+			}
+			.btn {
+				background-color: @color-1;
+				border: 1px solid @color-1;
+				transition: all 0.5s;
+				&:hover {
+					background-color: @color-2;
+					border: 1px solid @color-2;;
+				}
+				&:active {
+				border: 1px solid @color-2;
+				box-shadow: 0 0 10px @color-2;
+				}
+				&:focus {
+					border: 1px solid @color-2;
+					box-shadow: 0 0 10px @color-2;
+				}
+			}
+		}
+	}
+}
+
+
+/* SKILLS */
+
+.skills {
+	border-bottom: 2px solid @color-2;
+	min-height: 100vh;
+
+	.ta-end {
+		text-align: right;
+	}
+	.skills-h {
+		justify-content: center;
+		min-height: 30vh;
+		h1 {
+			border-bottom: 3px solid @color-2;
+			.first-letter {
+				color: @color-2;
+			}
+		}
+	}
+	.box {
+		min-height: 70vh;
+		.progress-bar {
+			background-color: @color-2;
+		}
+		.skill {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+/* CONTACTS */
+
+.contacts {
+
+	.form-group {
+		input, textarea{
+			background-color: rgba(255,255,255,.3);
+			&:active {
+				border: 1px solid @color-2;
+				box-shadow: 0 0 10px @color-2;
+			}
+			&:focus {
+				border: 1px solid @color-2;
+				box-shadow: 0 0 10px @color-2;
+			}
+
+		}
+	}
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	padding: 70px 0;
+	.contacts-h {
+		h1 {
+			
+			border-bottom: 3px solid @color-2;
+			.first-letter-2 {
+				color: @color-2;
+			}
+		}
+	}
+	form {
+		
+		button {
+			background-color: @color-1;
+			color: #fff;
+			border: 1px solid @color-1;
+			transition: all 0.5s;
+			&:hover {
+				background-color: @color-2;
+				border: 1px solid @color-2;
+			}
+		}
+	}
+}
+
+/* FOOTER */
+
+.footer {
+
+	font-size: 20px;
+	border-top: 2px solid @color-2;
+	a {
+		text-decoration: underline;
+		&:hover {
+			color: @color-2;
+			text-decoration: none;
+		}
+	}
+	p {
+		i {
+			color: @color-2;
+		}
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	.kk {
+		text-align: end;
+	}
+}
+
+/* MEDIA */
+
+@media (max-width: 576px) {
+	.top {
+		min-height: 100vh;
+		h1 {
+			font-size: 50px;
+			margin-top: 10vh;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		.navbar-nav {
+			font-size: 20px;
+			a {
+				margin: 5px 0;
+			}
+		}
+	}
+
+}
