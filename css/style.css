@@ -1,0 +1,256 @@
+/* ОСНОВА */
+body {
+  color: black;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+h1 {
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+}
+h1 .first-letter {
+  color: #333b50;
+}
+h2 {
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+}
+h2 .first-letter-2 {
+  font-weight: bold;
+  color: #3b0f1a;
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+/* КНОПКА "НАВЕРХ"" */
+.btn-top {
+  bottom: 40px;
+  right: 40px;
+  position: fixed;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  transition: all 0.5s;
+  color: #333b50;
+  display: none;
+  outline: none;
+}
+.btn-top:hover {
+  background-color: #3b0f1a;
+  cursor: pointer;
+  color: white;
+}
+.btn-top:active {
+  outline: none;
+  border: none;
+}
+.btn-top:focus {
+  outline: none;
+  border: none;
+}
+/* НАВИГАЦИЯ */
+.top .navbar {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid #3b0f1a;
+}
+.top .navbar a {
+  margin: 0 20px;
+  font-size: 20px;
+}
+/* TOP */
+.top {
+  border-bottom: 2px solid #3b0f1a;
+  min-height: 100vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+.top h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 30vh;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+}
+.top h1 .first-letter {
+  color: #333b50;
+}
+.top h2 {
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+}
+.top h2 .first-letter-2 {
+  color: #3b0f1a;
+}
+/* SERVICES */
+.omg {
+  min-height: 400px;
+  background: transparent;
+}
+.services {
+  min-height: 100vh;
+}
+.services .services-h {
+  justify-content: center;
+  min-height: 30vh;
+}
+.services .services-h h1 {
+  border-bottom: 3px solid #3b0f1a;
+}
+.services .services-h h1 .first-letter {
+  color: #3b0f1a;
+}
+.services .services-box {
+  min-height: 70vh;
+}
+.services .services-box .card-2 {
+  background: url(..//img/box-2.jpg) center;
+  background-size: cover;
+}
+.services .services-box .card-1 {
+  background: url(..//img/box-1.jpg) center;
+  background-size: cover;
+}
+.services .services-box .card:hover {
+  box-shadow: 0 0 10px #3b0f1a;
+}
+.services .services-box .card-body {
+  min-height: 300px;
+}
+.services .services-box .card-body i {
+  color: #3b0f1a;
+  text-shadow: 0 0 5px #fff;
+}
+.services .services-box .card-body p {
+  font-size: 18px;
+}
+.services .services-box .card-body h5 {
+  margin-top: 15px;
+  font-size: 30px;
+}
+.services .services-box .card-body .btn {
+  background-color: #333b50;
+  border: 1px solid #333b50;
+  transition: all 0.5s;
+}
+.services .services-box .card-body .btn:hover {
+  background-color: #3b0f1a;
+  border: 1px solid #3b0f1a;
+}
+.services .services-box .card-body .btn:active {
+  border: 1px solid #3b0f1a;
+  box-shadow: 0 0 10px #3b0f1a;
+}
+.services .services-box .card-body .btn:focus {
+  border: 1px solid #3b0f1a;
+  box-shadow: 0 0 10px #3b0f1a;
+}
+/* SKILLS */
+.skills {
+  border-bottom: 2px solid #3b0f1a;
+  min-height: 100vh;
+}
+.skills .ta-end {
+  text-align: right;
+}
+.skills .skills-h {
+  justify-content: center;
+  min-height: 30vh;
+}
+.skills .skills-h h1 {
+  border-bottom: 3px solid #3b0f1a;
+}
+.skills .skills-h h1 .first-letter {
+  color: #3b0f1a;
+}
+.skills .box {
+  min-height: 70vh;
+}
+.skills .box .progress-bar {
+  background-color: #3b0f1a;
+}
+.skills .box .skill {
+  margin-bottom: 15px;
+}
+/* CONTACTS */
+.contacts {
+  padding: 70px 0;
+}
+.contacts .form-group input,
+.contacts .form-group textarea {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.contacts .form-group input:active,
+.contacts .form-group textarea:active {
+  border: 1px solid #3b0f1a;
+  box-shadow: 0 0 10px #3b0f1a;
+}
+.contacts .form-group input:focus,
+.contacts .form-group textarea:focus {
+  border: 1px solid #3b0f1a;
+  box-shadow: 0 0 10px #3b0f1a;
+}
+.contacts .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.contacts .contacts-h h1 {
+  border-bottom: 3px solid #3b0f1a;
+}
+.contacts .contacts-h h1 .first-letter-2 {
+  color: #3b0f1a;
+}
+.contacts form button {
+  background-color: #333b50;
+  color: #fff;
+  border: 1px solid #333b50;
+  transition: all 0.5s;
+}
+.contacts form button:hover {
+  background-color: #3b0f1a;
+  border: 1px solid #3b0f1a;
+}
+/* FOOTER */
+.footer {
+  font-size: 20px;
+  border-top: 2px solid #3b0f1a;
+}
+.footer a {
+  text-decoration: underline;
+}
+.footer a:hover {
+  color: #3b0f1a;
+  text-decoration: none;
+}
+.footer p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.footer p i {
+  color: #3b0f1a;
+}
+.footer .kk {
+  text-align: end;
+}
+/* MEDIA */
+@media (max-width: 576px) {
+  .top {
+    min-height: 100vh;
+  }
+  .top h1 {
+    font-size: 50px;
+    margin-top: 10vh;
+  }
+  .top h2 {
+    font-size: 20px;
+  }
+  .top .navbar-nav {
+    font-size: 20px;
+  }
+  .top .navbar-nav a {
+    margin: 5px 0;
+  }
+}
