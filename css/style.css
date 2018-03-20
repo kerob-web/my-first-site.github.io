@@ -114,8 +114,12 @@ body {
   background: url(..//img/box-1.jpg) center;
   background-size: cover;
 }
+.services .services-box .card {
+  transition: .5s all;
+}
 .services .services-box .card:hover {
   box-shadow: 0 0 10px #3b0f1a;
+  background-position: right;
 }
 .services .services-box .card-body {
   min-height: 300px;

@@ -29,7 +29,6 @@ h1 {
 		}
 	}
 
-
 body {
 	font-family: 'Exo 2', sans-serif;
 }
@@ -136,8 +135,12 @@ body {
 			background: url(..//img/box-1.jpg) center;
 			background-size: cover;
 		}
-		.card:hover {
-			box-shadow: 0 0 10px @color-2;
+		.card {
+			transition: .5s all;
+			&:hover {
+				box-shadow: 0 0 10px @color-2;
+				background-position: right;
+			}
 		}
 		.card-body {
 			min-height: 300px;
