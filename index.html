@@ -1,254 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>Отправка формы на почту </title>
 
-    <title>Hello, world!</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+    	form {
+    		background-color: #f9f9f9;
+    		padding: 20px;
+    		margin: 20px;
+    	}
+    </style>
   </head>
+
   <body>
+    <div class="container">
 
-    <button class="btn-top wow wobble" title="Наверх" onclick="slowScroll('#nav')"> <i class="fa fa-angle-double-up" aria-hidden="true"></i> </button>
+      <div class="row">
+      	<div class="col-sm-4">
+      		<form action="telegram.php" method="POST">
+      			<legend>Заголовок формы</legend>
 
+      			<div class="form-group">
+      				<label for="">Введите ваше имя</label>
+      				<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+      			</div>
+      		
+      			<div class="form-group">
+      				<label for="">Введите номер телефона</label>
+      				<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+      			</div>
+      		
+      			<div class="form-group">
+      				<label for="">Введите email</label>
+      				<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+      			</div>
+      		
+      			<button type="submit" class="btn btn-primary">Отправить форму</button>
+      		</form>
+      	</div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
 
-
-        
-
-
-
-      <div class="top parallax-window" data-parallax="scroll" data-image-src="img/top-fon.jpg" id="top">
-        
-        <nav class="navbar navbar-expand-lg navbar-light col-12" id="nav">
-         
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav col-12 justify-content-center">
-              <a class="nav-item nav-link active" href="#" onclick="slowScroll('#top')" id="nav-item">Главная <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#" onclick="slowScroll('#services')" id="nav-item">Услуги</a>
-              <a class="nav-item nav-link" href="#" onclick="slowScroll('#skills')" id="nav-item">Навыки</a>
-              <a class="nav-item nav-link" href="#" onclick="slowScroll('#contacts')" id="nav-item">Обратная связь</a>
-            </div>
-          </div>
-        </nav>
-
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <h1 class="wow fadeInDown"><span class="first-letter">К</span>ирилл <span class="first-letter">К</span>еров</h1>
-            <h2 class="wow fadeInUp" data-wow-delay="1s"><span class="first-letter-2">Д</span>изайнер / <span class="first-letter-2">W</span>eb-разработчик / <span class="first-letter-2">H</span>TML-ВЕРСТАЛЬЩИК</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="omg parallax-window" data-parallax="scroll" data-image-src='img/2-fon.jpg'>
-        <div class="services container-fluid" id="services">
-
-        <div class="row services-h align-items-center">
-          <h1 class="wow fadeInDown"><span class="first-letter">У</span>слуги</h1>
-        </div>
-
-        <div class="row align-items-center services-box">
-          <div class="col-4">
-            <div class="card card-1 text-center wow fadeInDown" data-wow-delay="0.3s" style="background-color: rgba(255,255,255,.5);">
-              <div class="card-body">
-                <i class="fa fa-paint-brush fa-4x" aria-hidden="true"></i>
-                <h5 class="card-title">Дизайн</h5>
-                <p class="card-text">Cоздание прототипов страниц сайта, создание макетов для верстки.</p>
-                <a href="#" class="btn btn-primary">Заказать услугу сейчас</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card card-2 text-center wow fadeInDown" data-wow-delay="0.6s" style="background-color: rgba(255,255,255,.5);">
-              <div class="card-body">
-                <i class="fa fa-code fa-4x" aria-hidden="true"></i>
-                <h5 class="card-title">Верстка из макета</h5>
-                <p class="card-text">Адаптивная верстка, соответствующая всем современным стандартам.</p>
-                <a href="#" class="btn btn-primary">Заказать услугу сейчас</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card text-center wow fadeInDown" data-wow-delay="0.9s" style="background-color: rgba(255,255,255,.5);">
-              <div class="card-body">
-                <i class="fa fa-cogs fa-4x" aria-hidden="true"></i>
-                <h5 class="card-title">Специальный заголовок</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Заказать услугу сейчас</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div><!-- /.container -->
 
 
-      <div class="skills container-fluid" id="skills">
-
-        <div class="row skills-h align-items-center wow fadeInDown" data-wow-offset="100"><h1><span class="first-letter">Н</span>авыки</h1></div>
-       
-
-        <div class="row box align-items-center">
-          <div class="col-12">
-
-                <div class="row skill skill-1 wow fadeInLeft" data-wow-delay="0.3s">
-                  <div class="col-2 ta-end">
-                  <p>HTML5 + CSS3</p>
-                  </div>
-                  <div class="col-8">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <p>80 %</p>
-                  </div>
-                </div>
-
-                <div class="row skill wow fadeInRight" data-wow-delay="0.3s">
-                  <div class="col-2 ta-end">
-                  <p>JavaScript</p>
-                  </div>
-                  <div class="col-8">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <p>30 %</p>
-                  </div>
-                </div>
-
-                <div class="row skill wow fadeInLeft" data-wow-delay="0.3s">
-                  <div class="col-2 ta-end">
-                  <p>PHP</p>
-                  </div>
-                  <div class="col-8">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <p>20 %</p>
-                  </div>
-                </div>
-
-                <div class="row skill wow fadeInRight" data-wow-delay="0.3s">
-                  <div class="col-2 ta-end">
-                  <p>Bootstrap v4.0.0</p>
-                  </div>
-                  <div class="col-8">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <p>75 %</p>
-                  </div>
-                </div>
-
-          </div>
-        </div>
-      </div>
-      </div>
-
-
-      <div class="contacts container-fluid parallax-window" data-parallax="scroll" data-image-src="img/top-fon.jpg" id="contacts">
-
-        <div class="row justify-content-center contacts-h wow fadeInDown">
-          <h1><span class="first-letter-2">О</span>братная связь</h1>
-        </div>
-
-         <div class="row justify-content-center">
-           <div class="col-8">
-
-            <form action="php/telegram.php" method="POST">
-              <div class="form-group wow fadeInDown" data-wow-delay="0.2s">
-                <label>Введите ваше имя</label>
-                <input type="text" class="form-control" placeholder="Ваше имя" name="user_name">
-              </div>
-              <div class="form-group wow fadeInDown" data-wow-delay="0.3s">
-                <label>Введите ваш номер телефона</label>
-                <input type="text" class="form-control" placeholder="Номер телефона" name="user_phone">
-              </div>
-              <div class="form-group wow fadeInDown" data-wow-delay="0.4s">
-                <label for="exampleFormControlTextarea1">Введите ваше сообщение</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Текст сообщения" name="textarea"></textarea>
-              </div>
-              <button type="submit" class="btn wow fadeInDown" data-wow-delay="0.8s">Заказать обратный звонок</button>
-            </form>
-
-           </div>
-         </div>
-
-
-      </div>
-
-
-      <div class="footer container-fluid">
-        <div class="row  align-items-center">
-          <div class="col-8">
-            <p>Свяжитесь со мной:</p>
-            <p>
-              <span><i class="fa fa-vk" aria-hidden="true"></i><a href="https://vk.com/kirillkerov1994"> kirillkerov1994</a> </span>
-              <span><i class="fa fa-telegram" aria-hidden="true"></i> 8-992-010-06-73</span>
-            </p>
-            
-          </div>
-          <div class="col-4 kk">
-            <p>&copy; 2018 год Кирилл Керов</p>
-          </div>
-        </div>
-       
-
-      </div>
-   
-   
-  
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script>
-      function slowScroll (id) {
-        var offset = 0;
-        $('html').animate ({
-          scrollTop: $(id).offset ().top - offset
-        }, 900);
-        return false;
-      }
-
-      var $btnTop = $(".btn-top")
-      $(window).on("scroll", function(){
-        if ($(window).scrollTop() > 550){
-          $btnTop.fadeIn();
-        }else{
-          $btnTop.fadeOut();
-        }
-      });
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+	
